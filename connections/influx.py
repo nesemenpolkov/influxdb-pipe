@@ -8,9 +8,9 @@ from utils.singleton import singleton
 from config import Config
 
 
-# token = "VA4n9UqcFEqlR5i23shRMDBRGbgKmwx5gCzdvUPkC7qZfBzUDZwH6aeHjySTNK3tvpFDMkxEnQ8zTc-AlL8HQg=="
-# org = "FSONET"
-# url = "http://10.30.2.11:8088"
+# token = "secret-token"
+# org = "NET"
+# url = "http://127.0.0.1:8086"
 
 # client = InfluxDBClient(url=url, token=token, org=org)
 
@@ -80,8 +80,8 @@ try:
     )
 except:
     influx_conn = InfluxDBConnection(
-        "http://10.30.2.11:8088",
-        "FSONET",
-        "VA4n9UqcFEqlR5i23shRMDBRGbgKmwx5gCzdvUPkC7qZfBzUDZwH6aeHjySTNK3tvpFDMkxEnQ8zTc-AlL8HQg==",
+        "http://localhost:8086",
+        "NET",
+        "==secret_token==",
         "orion"
     )
