@@ -19,9 +19,9 @@ try:
     port = Config.orion_port
     print("Loaded deployment configs")
 except KeyError:
-    server = "10.30.2.98"
-    name = "yalovegin"
-    password = "5p@ceMar1ne"
+    server = "localhost"
+    name = "admin"
+    password = "admin"
     port = 17778
     print("Loaded development configs")
 
